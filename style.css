@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px; 
+}
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-box input{
+    width: 80%;
+    font-size: 20px;
+    text-transform: capitalize;
+    border: none;
+    background-color: rgb(172, 245, 221);
+    padding: 20px;
+    border-radius: 10px;
+}
+.search-box button{
+    font-size: 20px;
+    border: none;
+    background-color:  rgb(172, 245, 221);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.search-box button:hover{
+    background-color: rgb(46, 221, 163) ;
+    color: white;
+}
+.weather-body img{
+    width: 60%;
+}
+.weather-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    display: none;
+}
+.weather-box{
+    margin: 20px;
+    text-align: center;
+}
+.weather-box .temperature{
+    font-size: 40px;
+    font-weight: 700;
+}
+.weather-box .description{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+.humidity , .wind-speed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather-details i{
+    font-size: 35px;
+}
+.weather-details .text{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.location-not-found{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: none;
+}
+.location-not-found h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.location-not-found img{
+    width:80%;
+}
